@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+            font-family: montserrat sans serif;
+            margin: 0 auto;
+
+
+        }
+        body{
+            background-color: #1E1E1E;
+
+        }
+
+        .principal_container {
+            max-width: 600px;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+        }
+
+        figure {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1 {
+            color: #00409B;
+            font-size: 1.25rem;
+            font-weight: 800;
+            bottom: 0px;
+            position: absolute;
+            text-align: center;
+        }
+
+        @media(min-width:475px) {
+            h1 {
+                bottom: 60px;
+            }
+        }
+
+        .text_container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: #0B0B0B;
+        }
+
+        .text_container h2 {
+            font-weight: 400;
+            font-size: 1rem;
+
+        }
+
+        .text_container p {
+            font-weight: 500;
+            font-size: 1rem;
+
+        }
+
+        .text_container span {
+            color: #1AB800;
+            font-weight: 700;
+
+        }
+
+        .principal {
+            overflow: auto;
+            z-index: 1;
+
+        }
+
+        ul {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 150px;
+
+        }
+
+        @media(min-width:480px) {
+            ul {
+                flex-direction: row;
+            }
+        }
+
+        li {
+
+            width: 271px;
+            height: 226px;
+            border-radius: 10px;
+            list-style: none;
+        }
+
+        footer {
+            width: 600px;
+            height: 84px;
+            background-color: #1E1E1E;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            position: fixed;
+            bottom: 0;
+            max-width: 100%;
+        }
+
+        .box_icons {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="principal_container">
+
+        <div class="principal">
+
+            <figure>
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721186303/Banner_1_a4dyqr.png" alt=""
+                    srcset="">
+                <h1>BOAS NOTICIAS: SEU SAQUE FOI PROCESSADO!</h1>
+            </figure>
+            <section class="text_container">
+
+                <h2>Olá,<span> {{state.user_first_name}}!</span></h2>
+                <p>Estamos felizes em informar que o seu saque foi processado com sucesso. Seu dinheiro já está a
+                    caminho e
+                    em breve estará disponível em sua conta.</p>
+                <p>Estamos felizes em informar que o seu saque foi processado com sucesso. Seu dinheiro já está a
+                    caminho e
+                    em breve estará disponível em sua conta.</p>
+            </section>
+            <ul>
+                <li><img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721189340/Footer_-_Telegram_u5x1kj.png"
+                        alt="" srcset=""></li>
+                <li><img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721189321/Footer_-_Instagram_vtoqrw.png"
+                        alt="" srcset=""></li>
+            </ul>
+        </div>
+
+        <footer>
+            <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721189692/LOGOTIPO_V1_2_tist7n.png" alt=""
+                srcset="">
+
+            <div class="box_icons">
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721189941/mage_instagram-circle_hatyjj.png"
+                    alt="">
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721189996/ic_baseline-facebook_mlczid.png"
+                    alt="">
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721190045/entypo-social_youtube-with-circle_yzwg8s.png"
+                    alt="">
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721190093/mage_tiktok-circle_fhlnht.png"
+                    alt="">
+                <img src="https://res.cloudinary.com/dcyrneauz/image/upload/v1721190139/ri_telegram-fill_ywpzfx.png"
+                    alt="">
+            </div>
+
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
